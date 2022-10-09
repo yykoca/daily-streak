@@ -1,0 +1,7 @@
+<div class="week">
+  <div class="days" *ngFor="let days of weeks; let i = index">
+    <div [ngClass]="(i+1) === (day) ? 'today' : 'day'">
+      <span>{{today-day+i+1}}</span>
+    </div>
+  </div>
+</div>
